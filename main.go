@@ -2,9 +2,7 @@ package main
 
 /* import custom package */
 import (
-	"fmt"
-
-	"github.com/salatielosorno/Go/ejercicios"
+	"github.com/salatielosorno/Go/teclado"
 )
 
 func main() {
@@ -32,7 +30,10 @@ func main() {
 		}
 	*/
 
-	numberInt, message := ejercicios.Evaluate("100")
-	fmt.Println("Number:", numberInt)
-	fmt.Println(message)
+	/*
+		numberInt, message := ejercicios.Evaluate("100")
+		fmt.Println("Number:", numberInt)
+		fmt.Println(message)
+	*/
+	teclado.IngresoNumeros()
 }
