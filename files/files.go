@@ -1,6 +1,7 @@
 package files
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 
@@ -52,12 +53,19 @@ func SumaTabla() {
 }
 
 func LeoArchivo() {
-	archivo, err := os.ReadFile(filename)
+	archivo, err := os.Open(filename)
 
 	if err != nil {
 		fmt.Println("Error al leer el archivo. " + err.Error())
 		return
 	}
 
-	fmt.Println(string(archivo))
+	scanner := bufio.NewScanner(archivo)
+
+	for scanner.Scan() {
+		registro := scanner.Text()
+		fmt.Println("> " + registro)
+	}
+
+	archivo.Close()
 }
