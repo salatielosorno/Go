@@ -1,6 +1,6 @@
 package main
 
-import "github.com/salatielosorno/Go/files"
+import "github.com/salatielosorno/Go/funciones"
 
 /* import custom package */
 
@@ -51,5 +51,8 @@ func main() {
 	/*
 		files.SumaTabla()
 	*/
-	files.LeoArchivo()
+	/*
+		files.LeoArchivo()
+	*/
+	funciones.LlamarClosure()
 }
