@@ -54,5 +54,9 @@ func main() {
 	/*
 		files.LeoArchivo()
 	*/
-	funciones.LlamarClosure()
+	/*
+		funciones.LlamarClosure()
+	*/
+
+	funciones.Exponential(2)
 }
