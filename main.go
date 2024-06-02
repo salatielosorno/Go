@@ -2,7 +2,7 @@ package main
 
 /* import custom package */
 import (
-	"github.com/salatielosorno/Go/teclado"
+	"github.com/salatielosorno/Go/iteraciones"
 )
 
 func main() {
@@ -35,5 +35,8 @@ func main() {
 		fmt.Println("Number:", numberInt)
 		fmt.Println(message)
 	*/
-	teclado.IngresoNumeros()
+	/*
+		teclado.IngresoNumeros()
+	*/
+	iteraciones.Iterar()
 }
