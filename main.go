@@ -1,9 +1,8 @@
 package main
 
+import "github.com/salatielosorno/Go/ejercicios"
+
 /* import custom package */
-import (
-	"github.com/salatielosorno/Go/iteraciones"
-)
 
 func main() {
 	/*
@@ -38,5 +37,9 @@ func main() {
 	/*
 		teclado.IngresoNumeros()
 	*/
-	iteraciones.Iterar()
+	/*
+		iteraciones.Iterar()
+	*/
+
+	ejercicios.MultiplicationTable()
 }
