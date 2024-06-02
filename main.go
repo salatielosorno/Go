@@ -1,6 +1,6 @@
 package main
 
-import "github.com/salatielosorno/Go/ejercicios"
+import "github.com/salatielosorno/Go/files"
 
 /* import custom package */
 
@@ -41,5 +41,15 @@ func main() {
 		iteraciones.Iterar()
 	*/
 
-	ejercicios.MultiplicationTable()
+	/*
+		fmt.Println(ejercicios.MultiplicationTable())
+	*/
+	/*
+		files.GrabaTabla()
+	*/
+
+	/*
+		files.SumaTabla()
+	*/
+	files.LeoArchivo()
 }
