@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/salatielosorno/Go/users"
+	"github.com/salatielosorno/Go/ejercicios"
+	"github.com/salatielosorno/Go/modelos"
 )
 
 /* import custom package */
@@ -78,5 +79,12 @@ func main() {
 		mapas.MostrasMapas()
 	*/
 
-	users.AltaUsuario()
+	/*
+		users.AltaUsuario()
+	*/
+
+	pedro := new(modelos.Hombre)
+	ejercicios.HumanosRespirando(pedro)
+	martha := new(modelos.Mujer)
+	ejercicios.HumanosRespirando(martha)
 }
