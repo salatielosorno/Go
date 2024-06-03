@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/salatielosorno/Go/arreglos_slices"
+	"github.com/salatielosorno/Go/mapas"
 )
 
 /* import custom package */
@@ -70,5 +70,9 @@ func main() {
 	/*
 		arreglos_slices.MuestroSlice()
 	*/
-	arreglos_slices.Capacidad()
+	/*
+		arreglos_slices.Capacidad()
+	*/
+
+	mapas.MostrasMapas()
 }
