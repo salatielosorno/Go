@@ -1,6 +1,10 @@
 package main
 
-import "github.com/salatielosorno/Go/defer_panic"
+import (
+	"fmt"
+
+	"github.com/salatielosorno/Go/goroutines"
+)
 
 /* import custom package */
 
@@ -91,5 +95,19 @@ func main() {
 		defer_panic.VemosDefer()
 	*/
 
-	defer_panic.EjemploPanic()
+	/*
+		defer_panic.EjemploPanic()
+	*/
+
+	go goroutines.MiNombreLentooo("Salatiel")
+
+	fmt.Println("Estoy aquí")
+
+	/*
+		Esta línea hace que se espere un
+		valor por teclado. De esta forma el código
+		asíncrono puede ejecutarse.
+	*/
+	var x string
+	fmt.Scanln(&x)
 }
