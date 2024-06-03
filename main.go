@@ -1,6 +1,8 @@
 package main
 
-import "github.com/salatielosorno/Go/webserver"
+import (
+	"github.com/salatielosorno/Go/middleware"
+)
 
 /* import custom package */
 
@@ -101,5 +103,9 @@ func main() {
 	// acts as await :)
 	<-canal1 */
 
-	webserver.MyWebServer()
+	/*
+		webserver.MyWebServer()
+	*/
+
+	middleware.MiMiddleware()
 }
