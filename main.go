@@ -1,6 +1,8 @@
 package main
 
-import "github.com/salatielosorno/Go/funciones"
+import (
+	"github.com/salatielosorno/Go/arreglos_slices"
+)
 
 /* import custom package */
 
@@ -58,5 +60,15 @@ func main() {
 		funciones.LlamarClosure()
 	*/
 
-	funciones.Exponential(2)
+	/*
+		funciones.Exponential(2)
+	*/
+
+	/*
+		arreglos_slices.MuestroArreglos()
+	*/
+	/*
+		arreglos_slices.MuestroSlice()
+	*/
+	arreglos_slices.Capacidad()
 }
