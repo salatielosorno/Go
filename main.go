@@ -1,9 +1,6 @@
 package main
 
-import (
-	"github.com/salatielosorno/Go/ejercicios"
-	"github.com/salatielosorno/Go/modelos"
-)
+import "github.com/salatielosorno/Go/defer_panic"
 
 /* import custom package */
 
@@ -83,8 +80,16 @@ func main() {
 		users.AltaUsuario()
 	*/
 
-	pedro := new(modelos.Hombre)
-	ejercicios.HumanosRespirando(pedro)
-	martha := new(modelos.Mujer)
-	ejercicios.HumanosRespirando(martha)
+	/*
+		pedro := new(modelos.Hombre)
+		ejercicios.HumanosRespirando(pedro)
+		martha := new(modelos.Mujer)
+		ejercicios.HumanosRespirando(martha)
+	*/
+
+	/*
+		defer_panic.VemosDefer()
+	*/
+
+	defer_panic.EjemploPanic()
 }
