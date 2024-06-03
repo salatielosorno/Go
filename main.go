@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/salatielosorno/Go/mapas"
+	"github.com/salatielosorno/Go/users"
 )
 
 /* import custom package */
@@ -74,5 +74,9 @@ func main() {
 		arreglos_slices.Capacidad()
 	*/
 
-	mapas.MostrasMapas()
+	/*
+		mapas.MostrasMapas()
+	*/
+
+	users.AltaUsuario()
 }
