@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/salatielosorno/Go/goroutines"
-)
+import "github.com/salatielosorno/Go/webserver"
 
 /* import custom package */
 
@@ -97,9 +95,11 @@ func main() {
 		defer_panic.EjemploPanic()
 	*/
 
-	canal1 := make(chan bool)
+	/* canal1 := make(chan bool)
 	go goroutines.MiNombreLentooo("Salatiel", canal1)
 
-	/* acts as await :)*/
-	<-canal1
+	// acts as await :)
+	<-canal1 */
+
+	webserver.MyWebServer()
 }
