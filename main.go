@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/salatielosorno/Go/goroutines"
 )
 
@@ -99,15 +97,9 @@ func main() {
 		defer_panic.EjemploPanic()
 	*/
 
-	go goroutines.MiNombreLentooo("Salatiel")
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentooo("Salatiel", canal1)
 
-	fmt.Println("Estoy aquí")
-
-	/*
-		Esta línea hace que se espere un
-		valor por teclado. De esta forma el código
-		asíncrono puede ejecutarse.
-	*/
-	var x string
-	fmt.Scanln(&x)
+	/* acts as await :)*/
+	<-canal1
 }
